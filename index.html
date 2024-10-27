@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de ejemplo responsive</title>
+    <link href="estilo.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOREM IPSUM</a>
+            <!-- Botón para activar la hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Colapsable de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Barra de búsqueda en pantallas medianas y pequeñas -->
+                <form class="d-flex w-100 d-lg-none mb-2">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+
+                <!-- Menú de navegación -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amet</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- Texto "Opciones" solo visible en pantallas medianas y pequeñas -->
+                        <a class="nav-link dropdown-toggle d-md-block d-lg-none" href="#" id="opcionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="opcionesDropdown">
+                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Barra de búsqueda visible solo en pantallas grandes -->
+                <form class="d-flex ms-auto d-none d-lg-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2>Lorem ipsum...</h2>
+                <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="text-center">...lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="text-center">...phasellus eleifend semper tempor</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="text-center">...fusce vitae enim et tellus lacinia condimentum eu at massa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones y columnas de contenido -->
+        <div class="row justify-content-center mt-4">
+            <!-- Botones alineados verticalmente, ocultos en pantallas md y menores, visibles en pantallas lg y superiores -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0 d-none d-lg-block">
+                <button class="btn btn-outline-secondary w-100 mb-2">Opción 1</button>
+                <button class="btn btn-outline-secondary w-100 mb-2">Opción 2</button>
+                <button class="btn btn-outline-secondary w-100 mb-2">Opción 3</button>
+                <button class="btn btn-outline-secondary w-100 mb-2">Opción 4</button>
+            </div>
+
+            <!-- Columnas de texto responsivo -->
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis, tortor non vestibulum euismod, ex felis egestas erat, a interdum odio enim nec purus. Sed id risus ut lorem fermentum aliquet. Vivamus vel libero ac leo varius suscipit.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <p>Phasellus eleifend semper tempor. Quisque mi lorem, laoreet eu urna sit amet, tempor volutpat est. Vestibulum lobortis nulla vel odio laoreet, iaculis rhoncus neque porttitor.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p>Fusce vitae enim et tellus lacinia condimentum eu at massa. Nullam laoreet, elit quis hendrerit maximus, ante sem congue lorem, at vestibulum felis mauris et arcu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
